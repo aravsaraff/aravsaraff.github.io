@@ -54,6 +54,7 @@ nav a {
 
 #landing {
     background-image: url("../images/landing-back.jpg");
+    background-repeat: no-repeat;
     display: block;
     height: 95%;
 }
@@ -97,4 +98,3 @@ nav a {
     margin-left: auto;
     margin-right: auto;
 }
-
