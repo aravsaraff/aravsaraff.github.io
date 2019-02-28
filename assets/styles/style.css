@@ -1,14 +1,74 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('avenir/AvenirLTStd-Heavy.woff') ;
+}
+
 html {
     height: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 body {
-    height: 100%;
-    overflow: scroll;
-    background: black;
+    height: 100%; 
+    margin: 0px;
 }
 
-.nav {
-    background: 
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #0f0f0f91;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9999;
+    height: 70px;
 }
+nav ul {
+    display: inline;
+    list-style-type: none;
+}
+nav li {
+    display: block;
+    float: left;
+    padding: 20px 50px 20px 50px;
+    height: 40px;
+    margin: 0px;    
+}
+nav img {
+    float: left;
+    height: 50px;
+    vertical-align: top;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+nav a {
+    color: #044247d7;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+#landing {
+    background-image: url("../images/landing-back.jpg");
+    display: block;
+    height: 100%;
+}
+
+#landing-front {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    height: 40%;
+    width: 60%;
+}
+
+#landing-subtitle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    height: 20%;
+}
+
