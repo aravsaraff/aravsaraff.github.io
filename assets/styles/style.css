@@ -11,6 +11,7 @@
 html {
     height: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +19,15 @@ body {
     margin: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #membership {
+        display: none;
+    }
+}
 nav {
     position: fixed;
     width: 100%;
@@ -51,65 +61,50 @@ nav .nav-text {
 #landing {
     background-image: url("../images/landing-back.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
     background-attachment: fixed;
+    background-size: 100vw 100vh;
     width: 100%;
-    height: 100%;
-}
-
-#landing-front-container {
-    position: absolute;
-    top: 25%; 
     height: 35%;
-    width: 50%;
-    left: 25%;
 }
 
-#landing-front-container img {
-    width: 100%;
+#landing-front {
+    display: block;
+    height: 35%;
+    width: 60%; 
+    padding-top: 15%;
+    margin: auto;
 }
 
-#landing-subtitle-container {
-    position: absolute;
+#landing-subtitle {
+    display: block;
     height: 30%;
     width: 40%;
-    top: 60%;
-    left: 30%
-}
-
-#landing-subtitle-container img {
-    width: 100%;
+    margin: auto;
 }
 
 #nm-logo {
     display: block;
     height: 20%;
-    width: 55%;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    padding: 5vh;
+    margin: auto;
 }
 
 #nm-collage {
     display: block;
     height: 45%;
     width: 80%;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#nm-text-container {
-    display: block;
-    height: 30%;
-    width: 65%;
     margin: auto;
 }
 
-#nm-text-container p {
+#nm p {
+    display: block;
+    width: 65%;
+    margin: auto;
+    padding: 5vh;
     color: #032b50d8;
     font-family: 'Avenir';
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -119,40 +114,34 @@ nav .nav-text {
     color: #ffffff;
     text-align: center;
     font-family: 'Avenir';
-    font-size: 20px;
-    height: 40px;
-    width: 30%;
-    margin: 20px auto;
+    font-size: 12px;
+    height: 2em;
+    width: auto;
+    margin: auto;
+    padding: 0.5em 1em;
     border: none;
     border-radius: 20px;
 }
 
 #incoming {
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 15px;
-    width: 100%;
-    margin-top: 100px;
     background: url("../images/Work in Manipal.jpg") top no-repeat, #002c42 bottom;
-    background-size: 100% 60%, 100% 40%;
+    background-size: 100% 15vh, 100%;
+    margin-top: 8vh;   
+    padding: 4vh 0vh; 
 }
 
 #incoming-subtitle {
     display: block;
-    height: 20%;
+    height: 10vh;
     width: 65%;
-    margin: 100px auto auto;
+    margin: auto; 
+    padding-top: 4vh;
 }
 
-#incoming-text {
-    width: 60%;
-    margin: 15px auto;
-}
-
-#incoming-text p {
+#incoming p {
     color: #d6d1d1d5;
     font-family: 'Avenir-Light';
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
 }
 
@@ -161,40 +150,100 @@ nav .nav-text {
     background-color: #ffffff;
     color: #002c42;
     text-align: center;
-    padding: 10px 20px;
+    padding: 0 2em;
     font-family: 'Avenir';
-    font-size: 16px;
-    margin: 20px auto;
+    font-size: 10px;
+    margin: 4vh auto;
     border: none;
     border-radius: 25px;
-    height: 40px;
+    height: 5vh;
 }
 
 #outgoing h1 {
     color: #002c42;
-    font-size: 40px;
+    font-size: 22px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 4vh;
     font-family: 'Avenir';
 }
 
 #outgoing-flex {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    margin: 50px 150px 40px;
+    justify-content: center;
+    margin: 4vh auto;
 }
 
 #outgoing-flex img {
-    height: 300px;
+    margin: 10px;
+    height: 30vh;
 }
 
 #outgoing p {
     font-family: 'Avenir';
     color: #002c42;
-    font-size: 18px;
+    font-size: 10px;
     text-align: center;
-    margin: auto 100px 70px; 
+    margin: 5vh; 
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #landing {
+        height: 100%;
+    }
+
+    #landing-front {
+        width: 50%;
+    }
+
+    #nm-logo {
+        padding: 8vh;
+    }
+
+    #nm p {
+        font-size: 20px;
+        padding: 8vh;
+    }
+
+    #nm button {
+        font-size: 20px;
+    }
+
+    #incoming {
+        background-size: contain, 100%;
+    }
+
+    #incoming-subtitle {
+        padding-top: 24vh;
+    }
+    
+    #incoming p {
+        font-size: 18px;
+    }
+
+    #incoming button {
+        margin: 8vh auto;
+        font-size: 20px;
+    }
+
+    #outgoing h1 {
+        font-size: 40px;
+    }
+
+    #outgoing-flex {
+        margin: 5vh auto;
+    }
+
+    #outgoing-flex img {
+        margin: 15px;
+        height: 50vh;
+    }
+
+    #outgoing p {
+        font-size: 18px;
+        margin: 8vh;
+    }
 }
 
 #membership {
