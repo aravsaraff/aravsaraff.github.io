@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('avenir/AvenirLTStd-Heavy.woff') ;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('avenir/AvenirLTStd-Light.woff') ;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: 0px;
+    vertical-align: baseline;
+}
+
+#intro {
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+    background: url('../images/paper-map.jpg');
+    background-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#intro h1 {
+    color: #000000;
+    font-family: 'Avenir';
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 40px;
+}
