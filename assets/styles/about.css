@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('avenir/AvenirLTStd-Heavy.woff') ;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('avenir/AvenirLTStd-Light.woff') ;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%; 
+    margin: 0px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 9999;
+    height: 8%;
+    box-shadow: 0px 1px 3px #1e1f1fd8;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    width: 980px;
+    margin: auto;
+}
+nav img {
+    padding: 8px 0px;
+    height: 35px;
+}
+nav .nav-text {
+    padding: 15px 0px;
+    color: #013336d8;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+#about-us {
+    display: flex;
+    flex-flow: row wrap;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+#about-us #box {
+    width: 50%;
+    height: auto;
+}
+#about-us h1 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Avenir';
+    width: 50%;
+    margin: 15vh 4vh 4vh;
+}
+
+#about-us p {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    margin: 5vh;
+}
+
+#team {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: 5px solid #000000;
+}
+
+#team #head {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Avenir';
+    margin-top: 10vh;
+}
+
+h1 {
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#sb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+#sb div {
+    max-height: 100vh;
+}
+
+#sb div img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#sb div h2, p {
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    text-align: center;
+}
+
+#jb {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+#jb div {
+    max-height: 50vh;
+    margin: 5px;
+}
+
+#jb div img {
+    height: 30vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+#jb h1 {
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#jb div h3, p {
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    text-align: center;
+}
+
+#lc {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10vh;
+    height: auto;
+    background: url('../images/team/lc.jpg') 0 0 no-repeat;
+    position: relative;
+}
+
+#lc :before {
+    background-size: 100%;
+    transform: rotate(90deg);
+}
+
+#lc p {
+    font-size: 25px;
+    font-family: 'Avenir-Light';
+    color: #ffffff;
+    text-align: center;
+}

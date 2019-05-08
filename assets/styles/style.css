@@ -3,9 +3,15 @@
     src: url('avenir/AvenirLTStd-Heavy.woff') ;
 }
 
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('avenir/AvenirLTStd-Light.woff') ;
+}
+
 html {
     height: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,40 +19,40 @@ body {
     margin: 0px;
 }
 
+@media only screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #membership {
+        display: none;
+    }
+}
 nav {
     position: fixed;
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
     z-index: 9999;
-    height: 60px;
+    height: 8%;
     box-shadow: 0px 1px 3px #1e1f1fd8;
-}
-nav ul {
-    list-style-type: none;
-    padding: 8px;
-}   
-
-nav li {
-    float: left;
-    padding: 0px 20px;
-    height: 40px;    
 }
 
 #nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 980px;
     margin: auto;
 }
 nav img {
-    float: left;
+    padding: 8px 0px;
     height: 35px;
-    padding: 0px 20px;
-    margin: 0px; 
 }
-nav a {
+nav .nav-text {
+    padding: 15px 0px;
     color: #013336d8;
     font-size: 16px;
-    width: 100px;
     text-decoration: none;
     text-align: center;
     font-family: 'Avenir';
@@ -55,55 +61,322 @@ nav a {
 #landing {
     background-image: url("../images/landing-back.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
     width: 100%;
-    height: 100%;
+    height: 35%;
 }
 
-#landing-front-container {
+#landing-front {
     display: block;
-    padding-top: 15%; 
     height: 35%;
-    width: 50%;
+    width: 60%; 
+    padding-top: 15%;
     margin: auto;
 }
 
-#landing-front-container img {
-    width: 100%;
-}
-
-#landing-subtitle-container {
+#landing-subtitle {
     display: block;
     height: 30%;
     width: 40%;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#landing-subtitle-container img {
-    width: 100%;
-}
-
-#nm {
-    display: block;
-    height: 95%;
+    margin: auto;
 }
 
 #nm-logo {
     display: block;
     height: 20%;
-    width: 55%;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    padding: 5vh;
+    margin: auto;
 }
 
 #nm-collage {
     display: block;
     height: 45%;
     width: 80%;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+
+#nm p {
+    display: block;
+    width: 65%;
+    margin: auto;
+    padding: 5vh;
+    color: #002c42;
+    font-family: 'Avenir';
+    font-size: 10px;
+    text-align: center;
+}
+
+#nm button {
+    display: block;
+    background-color: #ee22b1d8;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 12px;
+    height: 2em;
+    width: auto;
+    margin: auto;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 20px;
+}
+
+#incoming {
+    background: url("../images/Work in Manipal.jpg") top no-repeat, #002c42 bottom;
+    background-size: 100% 15vh, 100%;
+    margin-top: 8vh;   
+    padding: 4vh 0vh; 
+}
+
+#incoming-subtitle {
+    display: block;
+    height: 10vh;
+    width: 65%;
+    margin: auto; 
+    padding-top: 4vh;
+}
+
+#incoming p {
+    color: #d6d1d1d5;
+    font-family: 'Avenir-Light';
+    font-size: 10px;
+    text-align: center;
+}
+
+#incoming button {
+    display: block;
+    background-color: #ffffff;
+    color: #002c42;
+    text-align: center;
+    padding: 0 2em;
+    font-family: 'Avenir';
+    font-size: 10px;
+    margin: 4vh auto;
+    border: none;
+    border-radius: 25px;
+    height: 5vh;
+}
+
+#outgoing h1 {
+    color: #002c42;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 4vh;
+    font-family: 'Avenir';
+}
+
+#outgoing-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 4vh auto;
+}
+
+#outgoing-flex img {
+    margin: 10px;
+    height: 30vh;
+}
+
+#outgoing p {
+    font-family: 'Avenir';
+    color: #002c42;
+    font-size: 10px;
+    text-align: center;
+    margin: 5vh; 
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #landing {
+        height: 100%;
+    }
+
+    #landing-front {
+        width: 50%;
+    }
+
+    #nm-logo {
+        padding: 8vh;
+    }
+
+    #nm p {
+        font-size: 20px;
+        padding: 8vh;
+    }
+
+    #nm button {
+        font-size: 20px;
+    }
+
+    #incoming {
+        background-size: contain, 100%;
+    }
+
+    #incoming-subtitle {
+        padding-top: 24vh;
+    }
+    
+    #incoming p {
+        font-size: 18px;
+    }
+
+    #incoming button {
+        margin: 8vh auto;
+        font-size: 20px;
+    }
+
+    #outgoing h1 {
+        font-size: 40px;
+    }
+
+    #outgoing-flex {
+        margin: 5vh auto;
+    }
+
+    #outgoing-flex img {
+        margin: 15px;
+        height: 50vh;
+    }
+
+    #outgoing p {
+        font-size: 18px;
+        margin: 8vh;
+    }
+}
+
+#membership {
+    background-color: #002c42;
+}
+
+#membership #header-1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+#membership #header-2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 50px 0px;
+}
+
+#membership #header-2 img {
+    padding: 20px;
+}
+
+#membership #iaeste-india {   
+    height: 60px;
+}
+
+#membership #line {
+    background-color: #ffffff;
+    margin: auto 50px;
+    height: 60px;
+    width: 3px;
+}
+
+#membership #exchange-year {
+    margin: 20px;
+    height: 30px;
+}
+
+#membership #body {
+    background-color: #0d4663;
+    padding: 30px auto;
+    z-index: 0;
+}
+
+#membership #body #back {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    margin: 20px;
+    z-index: 1;
+}
+
+#membership h2 {
+    z-index: 1;
+    padding: 25px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Avenir';
+}
+
+#membership #stats {
+    z-index: 1;
+    display: grid;
+    color: #ffffff;
+    font-family: 'Avenir';
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 10px;
+}
+#membership #stats div {
+    margin-bottom: 40px;
+}
+#membership #stats h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+
+#membership #stats p {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+#membership #footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+#membership #footer div {
+    margin: 50px auto;
+}
+
+#membership #footer h3 {
+    font-size: 40px;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Avenir';
+}
+
+#membership #footer p {
+    font-size: 20px;
+    padding: 0;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Avenir';
+}
+
+#membership #footer button {
+    display: block;
+    background-color: #ffffff;
+    color: #002c42;
+    font-family: 'Avenir-Light';
+    border-radius: 20px;
+    height: 40px;
+    padding: 0px 20px;
+    border: none;
+    margin: auto;
+    font-size: 15px;
+}
+
+#employers h1 {
+    font-size: 50px;
+    margin: 50px;
+    font-family: 'Avenir';
+    text-align: center;
+    color: #002c42;
 }
