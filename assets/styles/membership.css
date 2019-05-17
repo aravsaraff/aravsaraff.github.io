@@ -23,11 +23,8 @@ html, body {
     nav {
         display: none;
     }
-
-    #membership {
-        display: none;
-    }
 }
+
 nav {
     position: fixed;
     width: 100%;
@@ -71,7 +68,7 @@ nav .nav-text {
     text-align: center;
     font-size: 40px;
     margin: 0vh;
-    padding-top: 8vh;
+    padding-top: 15vh;
     box-shadow: #ffffff;
 }
 
@@ -85,10 +82,26 @@ nav .nav-text {
 #stats div {
     background: #640808ad;
     text-align: center;
-    color:#ffffff67;
+    color:#ffffffb4;
     font-family: 'Avenir';
     font-size: 18px;
     border-radius: 50px;
     padding: 20px;
     box-shadow: 10px #000000;
+}
+
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #ddd6f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #8a8585,  #640808be); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#content div {
+    width: 40vw;
+    font-family: 'Avenir';
+    color: #000000;
+    padding: 5vh;
 }
