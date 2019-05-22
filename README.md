@@ -1,2 +1,0 @@
-# iaeste-website
-IAESTE Website
