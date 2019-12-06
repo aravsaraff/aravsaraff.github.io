@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('avenir/AvenirLTStd-Heavy.woff') ;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('avenir/AvenirLTStd-Light.woff') ;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: 0px;
+    vertical-align: baseline;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 9999;
+    height: 8%;
+    box-shadow: 0px 1px 3px #1e1f1fd8;
+}
+
+#nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 980px;
+    margin: auto;
+}
+nav img {
+    padding: 8px 0px;
+    height: 35px;
+}
+nav .nav-text {
+    padding: 15px 0px;
+    color: #013336d8;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+#landing {
+    margin: 50px 0px 0px 0px;
+    border: 0px;
+    padding: 0px;
+    background-image: url("../images/incoming-landing.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: 100% 80vh;
+    background-repeat: no-repeat;
+}
+
+#landing h1 {
+    padding: 30px;
+    font-family: 'Avenir';
+    font-size: 40px;
+    line-height: 1.5em;
+}
+
+#nm {
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding: 30px;
+    background: -webkit-linear-gradient(to bottom, #180e00, #022c47);
+    background: linear-gradient(to bottom, #180e00, #022c47);
+    justify-content: center;
+}
+
+#nm img {
+    display: block;
+    height: 15vh;
+    width: 50vw;
+    margin: 20px auto;
+}
+
+#nm #intro {
+    margin: 50px;
+    font-family: 'Avenir';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#events-header {
+    color: #f32b7e;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 50px;
+}
+
+#events {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 100px;
+}
+
+#events div {
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    box-shadow: 20px 20px 15px #00000098;
+}
+
+#events div img {
+    margin: 10px;
+    padding: 0;
+    height: 45vh;
+    width: 45vh;
+    object-fit: cover;
+}
+
+#events div p {
+    margin: 15px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+#interning {
+    display: block;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background: -webkit-linear-gradient(to bottom, #022c47, #f36755da);
+    background: linear-gradient(to bottom, #022c47, #f36755da);
+}
+
+#interning h1 {
+    margin: 0px;
+    padding: 15vh;
+    font-size: 50px;
+    font-family: 'Avenir';
+    text-align: center;
+    color: #ffffff;
+}
+
+#interning h2 {
+    margin: 20px 5vw;
+    font-family: 'Avenir';
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#interning h3 {
+    font-family: 'Avenir';
+    color: #ffffff;
+    margin: 20px 5vw;
+    font-size: 25px;
+}
+
+#interning p {
+    margin: 30px 5vw;
+    color: #ffffff;
+    font-family: 'Avenir';
+    font-size: 20px;
+}
+
+#interning li {
+    margin: 30px 5vw;
+    color: #ffffff;
+    font-family: 'Avenir';
+    font-size: 20px;
+}
+
+hr {
+    width: 90vw;
+    color: #ffffff;
+}
+
+#about-manipal img {
+    margin: 30px 5vw;
+    float: left;
+    height: 35vh;
+    width: 35vw;
+    box-shadow: 5px 5px 5px #00000098;
+}
+
+#living {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#living div {
+    width: 50%
+}
+
+#living img {
+    margin: 50px 5vw;
+    height: 40vh;
+    width: 35vw;
+    box-shadow: 5px 5px 5px #00000098;
+}
+
