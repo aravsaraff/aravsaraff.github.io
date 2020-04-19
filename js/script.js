@@ -183,7 +183,7 @@
 					answer: "fountain",
 					position: 20,
 					orientation: "across",
-					startx: 21,
+					startx: 19,
 					starty: 23
 				},
 				{
